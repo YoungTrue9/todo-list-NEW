@@ -1,0 +1,58 @@
+// Form
+.form
+  .form-toggle
+  .form-panel.one
+    .form-header
+      h1 Вход
+    .form-content
+      form
+        .form-group
+          label(for='username') Имя
+          input(type='text'
+                id='username'
+                name='username'
+                required)
+        .form-group
+          label(for='password') Пароль
+          input(type='password'
+                id='password'
+                name='password'
+                required)
+        .form-group
+          label.form-remember
+            input(type='checkbox')
+            | запомнить меня
+          a.form-recovery(href='#') Регистрация
+        .form-group
+          button(type='submit') Вход
+  .form-panel.two
+    .form-header
+      h1 Регистрация
+    .form-content
+      form
+        .form-group
+          label(for='username') Имя
+          input(type='text'
+                id='username'
+                name='username'
+                required)
+        .form-group
+          label(for='password') Пароль
+          input(type='password'
+                id='password'
+                name='password'
+                required)
+        .form-group
+          label(for='cpassword') Повторение пароля
+          input(type='password'
+                id='cpassword'
+                name='cpassword'
+                required)
+        .form-group
+          label(for='email') Емайл
+          input(type='email'
+                id='email'
+                name='email'
+                required)
+        .form-group
+          button(type='submit') Регистрация
